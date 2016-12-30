@@ -59,7 +59,7 @@ fieldset {
 }
 
 .form-header2 {
-    margin: 1.5em 1em 1.5em 0;
+    margin-bottom: 1em;
     font-size: 1.3em;
     font-weight: bold;
 }
@@ -71,11 +71,31 @@ label {
 }
 
 input,
-textarea,
+textarea {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 95%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
 select {
     background: rgba(255,255,255,0.1);
     border: none;
     font-size: 16px;
+    font-style: italic;
+    text-align-last: center;
     height: auto;
     margin: 0;
     outline: 0;
@@ -105,7 +125,8 @@ textarea:hover {
 }
 
 ::-webkit-input-placeholder {
-   text-align:right;
+   text-align:center;
+   font-style: italic;
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -125,10 +146,17 @@ textarea {
     box-sizing: content-box;
 }
 
+.checkbox-radio label {
+    display: inline-block;
+    margin: 10px;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
-    width: 5%;
+    width: 15px;
+    height: 15px;
 }
+
 
 #zip {
     width: 40%;
@@ -153,12 +181,11 @@ button {
 }
 
 .form-title {
-    margin-bottom: 25px;
+    margin: 35px 0;
+    font-weight: bold;
+    color: #59595b;
 }
 
-.form-title-2 {
-    margin: 10px 0 20px 0;
-}
 
 @media only screen and (min-width: 768px) {
 

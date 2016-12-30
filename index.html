@@ -21,19 +21,19 @@
                 <legend class="form-header1">Contact Information</legend>
                 <!-- <h3>Contact Information</h3> -->
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="full_name" required placeholder="required"/>
+                <input type="text" id="name" name="full_name" required placeholder="share your Name - required"/>
 
                 <label for="mail">Email Address</label>
-                <input type="email" id="mail" name="user_mail" required placeholder="required"/>
+                <input type="email" id="mail" name="user_mail" required placeholder="share your Email - required"/>
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone"/>
+                <input type="tel" id="phone" name="user_phone" placeholder="share your Phone Number" />
 
                 <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address"/>
+                <input type="text" id="address" name="user_address" placeholder="share your Address"/>
 
                 <label for="city">City</label>
-                <input type="text" id="city" name="user_city"/>
+                <input type="text" id="city" name="user_city" placeholder="share your City" />
 
                 <label for="state">State</label>
                 <select id="state" name="state">
@@ -95,19 +95,25 @@
                 <input type="text" id="zip" name="user_zip"/>
             </fieldset>
         <hr class="hr2">
-            <fieldset>
-    <!--     <h2>Newsletter</h2> -->
+            <fieldset class="secondary-form">
+
                 <legend class="form-header2">Newsletter</legend>
+
                 <label class="form-title">Select the newsletters you would like to receive</label>
 
-                <input type="checkbox" name="newsletter1" value="html_news"> HTML News<br>
-                <input type="checkbox" name="newsletter2" value="css_news"> CSS News<br>
-                <input type="checkbox" name="newsletter3" value="javascript_news"> Javascript News<br>
+                <div class="checkbox-radio">
+                    <input type="checkbox" id="html" name="newsletter1" value="html_news"><label for="html">HTML News</label><br>
 
-                <label class="form-title-2">Newsletter format</label>
+                    <input type="checkbox" id="css" name="newsletter2" value="css_news"><label for="css">CSS News</label><br>
 
-                <input type="radio" name="format" value="html_format"> HTML<br>
-                <input type="radio" name="format" value="plain_text"> Plain Text<br>
+                    <input type="checkbox" id="javascript" name="newsletter3" value="javascript_news"><label for="javascript">Javascript News</label><br>
+
+                    <h4 class="form-title">Newsletter format</h4>
+
+                    <input type="radio" id="html_format" name="format" value="html_format"><label for="html_format">HTML</label><br>
+
+                    <input type="radio" id="plain_text" name="format" value="plain_text"><label for="plain_text">Plain Text</label><br>
+                </div>
 
                 <label for="textarea" class="form-title">Other topics you'd like to hear about</label>
 
