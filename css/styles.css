@@ -130,15 +130,18 @@ textarea:hover {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   text-align:right;
+   text-align:center;
+   font-style: italic;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   text-align:right;
+   text-align:center;
+   font-style: italic;;
 }
 
 :-ms-input-placeholder {
-   text-align:right;
+   text-align:center;
+   font-style: italic;
 }
 
 select,
